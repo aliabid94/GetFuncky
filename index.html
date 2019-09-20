@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GetFuncky</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="stylesheet" href="dist/css/custom.css">
+	<script src="https://unpkg.com/animejs@3.0.1/lib/anime.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+</head>
+<body class="is-boxed">
+    <div class="body-wrap">
+        <header class="site-header">
+            <div class="container">
+                <div class="site-header-inner">
+                    <div class="brand header-brand">
+                        <h1 class="m-0">
+							<a href="index.html">
+								<img id="logo" class="header-logo-image" src="dist/images/logo.png" alt="Logo">
+                            </a>
+                        </h1>
+                    </div>
+                    <nav>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-inner">
+						<div class="hero-copy">
+	                        <h1 class="hero-title mt-0">Give us a <span class="focus1">Function Header</span>. Our Engineers Fill in the <span class="focus2">Code</span>.</h1>
+	                        <p class="hero-paragraph">Save time spent on writing helper functions, API endpoints, utility classes, and more. Let your engineering talent focus on tackling core project objectives.</p> 
+	                        <p class="hero-paragraph"><strong>10x Your Engineers.</strong></p> 
+	                        <div class="hero-cta"><a class="button button-primary" href="#lets-chat">Contact Us</a></div>
+						</div>
+						<div class="hero-figure anime-element">
+                            <div id="display-screen">
+                            <div id="code-label"><span class="your_code">What You Write</span> vs <span class="our_code">What We Write</span></div>
+<pre class="our_code">import pandas as pd</pre>
+<pre class="your_code">
+
+def count_sensor_errors(file, threshold=5):
+    """Takes csv file with header columns: sensor, 
+    expected_value, and sensor_value. Returns dict:
+    key is sensor, value is number of times expected 
+    and sensor value difference exceeds threshold."""
+</pre>
+<pre class="our_code">
+
+    sensor_errors = {}
+    with open(file) as csv_file:
+        df = pd.DataFrame(csv_file)
+        for index, row in df.iterrows():
+            difference = (abs(row["expected_value"] 
+                - row["sensor_value"]))
+            if difference > threshold:
+                if sensor not in sensor_errors:
+                    sensor_error[sensor] = 0
+                sensor_error[sensor] += 1
+    
+    return sensor_errors
+</pre>
+                                </div>
+							<svg class="placeholder" width="528" height="396" viewBox="0 0 528 396">
+								<rect width="528" height="396" style="fill:transparent;" />
+							</svg>
+							<div class="hero-figure-box hero-figure-box-01" data-rotation="45deg"></div>
+							<div class="hero-figure-box hero-figure-box-02" data-rotation="-45deg"></div>
+							<div class="hero-figure-box hero-figure-box-04" data-rotation="-135deg"></div>
+							<div class="hero-figure-box hero-figure-box-05"></div>
+							<div class="hero-figure-box hero-figure-box-06"></div>
+							<div class="hero-figure-box hero-figure-box-07"></div>
+							<div class="hero-figure-box hero-figure-box-08" data-rotation="-22deg"></div>
+							<div class="hero-figure-box hero-figure-box-09" data-rotation="-52deg"></div>
+							<div class="hero-figure-box hero-figure-box-10" data-rotation="-50deg"></div>
+						</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features section">
+                <div class="container">
+					<div class="features-inner section-inner has-bottom-divider">
+                        <div class="pricing-header text-center">
+                            <h2 class="section-title mt-0">How GetFuncky Works</h2>
+                            <p class="section-paragraph mb-0">Type a function signature in your favorite editor right where you want it. Use our plugin to send the file to GetFuncky. The function body will be filled into your code, in as quick as 10 minutes. </p>
+                        </div>
+                        <div class="features-wrap">
+							<div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/editor.svg">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Works From Your Editor</h4>
+                                    <p class="text-sm mb-0">No change in workflow - just write a function header, and comments or doctests optionally for clarity. Then send it and move on. </p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/stopwatch.svg">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Quick Responses</h4>
+                                    <p class="text-sm mb-0">The majority of our function bodies are written in under 20 minutes. They'll be loaded right back into your editor. </p>
+                                </div>
+                            </div>
+                            <div class="feature text-center is-revealing">
+                                <div class="feature-inner">
+                                    <div class="feature-icon">
+										<img src="dist/images/empower.svg">
+                                    </div>
+                                    <h4 class="feature-title mt-24">Multiply Your Engineers</h4>
+                                    <p class="text-sm mb-0">Make each engineer significantly more effective. We take care of the 50% of the codebase that's time-consuming and isolatable. So your engineers can focus on the other 50%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+			<section class="cta section" id="lets-chat">
+				<div class="container">
+					<div class="cta-inner section-inner">
+                        <h3 class="section-title mt-0">Let's Chat.</h3>
+                        <form id="contact" action="https://formspree.io/admin@gradio.app" method="POST">
+                            <div class="label-row">
+                              <label>
+                                Name
+                                <input type="text" name="name">
+                              </label>
+                              <label>
+                                Email
+                                <input type="email" name="email">
+                              </label>  
+                            </div>
+                            <div class="label-row">
+                              <label>
+                                Organization / Company
+                                <input type="text" name="organization">
+                              </label>
+                              <label>
+                                Team Size
+                                <input type="text" name="domain">
+                              </label>  
+                            </div>
+                            <div class="label-row">
+                              <label>
+                                Details
+                                <textarea name="details"></textarea>
+                              </label>
+                            </div>
+                            <div class="cta-cta">
+                                <input type="submit" class="button button-primary button-wide-mobile">
+                            </div>
+                        </form>
+					</div>
+				</div>
+			</section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="site-footer-inner">
+                <div class="footer-copyright"><a target="_blank" id="pear" href="http://pear.vc"><img src="dist/images/pear.png"></a> <a target="_blank" href="http://stanford.edu"><img src="dist/images/stanford.png"></a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="dist/js/main.min.js"></script>
+    <script async defer src="https://buttons.github.io/buttons.js"></script>    
+</body>
+</html>
